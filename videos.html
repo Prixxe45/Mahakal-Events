@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Event Videos – Mahakal Events</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .video-page {
+      padding: 60px 5%;
+      background: #fefefe;
+      text-align: center;
+    }
+
+    .video-page h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .video-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .video-gallery iframe,
+    .video-gallery video {
+      width: 100%;
+      max-width: 400px;
+      height: 220px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+
+      .video-gallery iframe,
+      .video-gallery video {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="video-page">
+    <h2>Our Event Videos</h2>
+    <div class="video-gallery">
+      <!-- Local Video File -->
+      <video controls>
+        <source src="asset/63a9db612d3bb73347fba85089ba1ab5.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="asset/64f52463cff90d81abd8a9ea68355099.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+<video controls>
+  <source src="asset/c0ad2709b11b2c2788c0dbe38ba69aa7_720w.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+   
+
+    </div>
+  </section>
+
+</body>
+
+</html>

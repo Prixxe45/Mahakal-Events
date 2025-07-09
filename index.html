@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahakal Events</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="nav-header">
+    <div class="logo">Mahakal Events</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#programs">Programs</a>
+      <a href="#videos">Videos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1 >Making Moments Magical</h1>
+      <p>Since 2010 • Weddings • Parties • Memories</p>
+      <div class="hero-buttons">
+        <button onclick="book('Surend')">Book Surend Sharma</button>
+        <button onclick="book('Adil')">Book Adil Sharma</button>
+     
+      </div>
+    </div>
+  </section>
+
+  <section id="programs" class="programs">
+    <h2>Our Programs</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/64/a2/41/64a241d57c96a568bb94b58e22de08ac.jpg" alt="Wedding">
+        <h3>Weddings</h3>
+        <p>Luxury themes, decor, and unforgettable celebrations.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/1a/34/a2/1a34a275904e6be713377ac4e953299b.jpg" alt="Birthday">
+        <h3>Birthdays</h3>
+        <p>Fun, color and smiles for every age and stage.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/72/ab/bf/72abbf5303af9e395a655b4d5b8dce75.jpg" alt="Party">
+        <h3>Home Function</h3>
+        <p>Professional, stylish, and impactful gatherings.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/d5/41/ce/d541ce392e4e531930feef7fbca7765c.jpg" alt="Mehndi">
+        <h3>Haldi & Mehndi Decoration</h3>
+        <p>Traditional with a modern twist — we style emotions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-wrapper">
+      <h2>Who We Are</h2>
+      <p>
+        At <strong>Mahakal Events</strong>, we believe that every celebration is a story — your story — and we bring it
+        to life with creativity, detail, and elegance. With over 15 years of experience, we have mastered the art of
+        transforming ideas into unforgettable moments. Whether it’s a grand wedding, a cozy birthday, a luxurious
+        anniversary, or a corporate gala, we tailor every detail to reflect your personality and purpose. Our
+        professional team, curated vendors, and artistic designers ensure every event feels exclusive and timeless.
+        Let’s craft your dream event together — with heart, soul, and a little sparkle of magic.
+      </p>
+    </div>
+  </section>
+
+  <section class="mini-cta">
+    <p>Need a website like this? <a
+        href="https://wa.me/919826315698?text=Hi! I saw your event website and want something similar."
+        target="_blank">Let's talk on WhatsApp</a></p>
+  </section>
+
+
+  <footer id="contact" class="footer-clean">
+    <div class="footer-wrapper">
+      <h3>Let’s Plan Your Event</h3>
+      <p>Add: Dipo Colony, Mahoba Road, Chhatarpur</p>
+      <div class="footer-links">
+        <p><strong>Surend:</strong> <a href="tel:+919826315698">+91 9826315698</a></p>
+        <p><strong>Adil:</strong> <a href="tel:+917505273165">+91 7505273165</a></p>
+      </div>
+      <div class="footer-buttons">
+        <button onclick="book('Surend')">WhatsApp Surend</button>
+        <button onclick="book('Adil')">WhatsApp Adil</button>
+      </div>
+      <p class="copyright">
+        © Mahakal Events 2010 – 2025. All Rights Reserved.
+      </p>
+      <p style="font-size: xx-small; margin-top: 1vh;">Crafted by Prince for more info connect on <a style="font-size: medium; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" href="https://www.instagram.com/prixxe._/">Instagram</a> </h1></p>
+    </div>
+  </footer>
+
+ 
+
+  <script>
+    function book(person) {
+      let number = person === 'Surend' ? '919826315698' : '917505273165';
+      let message = encodeURIComponent("Hi! I want to book an event with Mahakal Events.");
+      window.open(`https://wa.me/${number}?text=${message}`, '_blank');
+    }
+  </script>
+
+</body>
+
+</html>
